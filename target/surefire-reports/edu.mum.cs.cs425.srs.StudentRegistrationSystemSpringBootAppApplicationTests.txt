@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.mum.cs.cs425.srs.StudentRegistrationSystemSpringBootAppApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.726 s - in edu.mum.cs.cs425.srs.StudentRegistrationSystemSpringBootAppApplicationTests
