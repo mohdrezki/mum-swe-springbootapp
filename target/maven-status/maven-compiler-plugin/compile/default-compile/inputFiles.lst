@@ -1,0 +1,7 @@
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/controller/StudentController.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/service/IStudentService.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/repository/IStudentRepository.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/service/impl/StudentService.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/model/Student.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/StudentRegistrationSystemSpringBootAppApplication.java
+/Users/mohammed/doc/springboot-workspace/StudentRegistrationSystemSpringBootApp/src/main/java/edu/mum/cs/cs425/srs/controller/HomepageController.java
