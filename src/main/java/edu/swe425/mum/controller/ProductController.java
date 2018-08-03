@@ -74,7 +74,6 @@ public class ProductController {
 			model.addAttribute("errors", bindingResult.getAllErrors());
 			return "products/edit-product";
 		}
-		System.out.println("::::::::"+product.getProductId()+"::::::::");
 		productService.save(product);
 		return "redirect:/products";
 		
