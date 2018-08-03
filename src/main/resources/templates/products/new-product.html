@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="~{common/mainlayout}">
+<head>
+    <title>Product Management System</title>
+</head>
+<body>
+
+    <th:block layout:fragment="content">
+        
+        <form method="post" action="/products/new" th:object="${product}">
+            <fieldset>
+                <legend class="add-product-legend">New Product Form</legend>
+                <input type="hidden" name="productId" th:value="${product.productId}" />
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <span th:if="${#fields.hasErrors('productName')}" th:errors="*{productName}"
+									class="alert alert-danger"></span>
+                    <input id="productName" name="productName" type="text" class="form-control" th:value="${product.productName}">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Product Price</label>
+                    <span th:if="${#fields.hasErrors('productPrice')}" th:errors="*{productPrice}"
+									class="alert alert-danger"></span>
+                    <input id="productPrice" name="productPrice" type="text" class="form-control" th:value="${product.productPrice}">
+                </div>                
+                <div class="form-group">
+                        <label for="productDescription">Product Description</label>
+                        <span th:if="${#fields.hasErrors('productDescription')}" th:errors="*{productDescription}"
+                            class="alert alert-danger"></span>
+                        <input id="productDescription" name="productDescription" type="text" class="form-control" th:value="${product.productDescription}">
+                </div>                
+                <div class="form-group">
+                        <label for="productImage">Product Image link</label>
+                        <span th:if="${#fields.hasErrors('productImage')}" th:errors="*{productImage}"
+                            class="alert alert-danger"></span>
+                        <input id="productImage" name="productImage" type="text" class="form-control" th:value="${product.productImage}">
+                </div>    
+                <div style="float:right;">
+                    <a href="/products" class="btn btn-light">Cancel</a>&nbsp;&nbsp;&nbsp;            
+                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Add product</button>
+                </div>
+            </fieldset>
+        </form>
+        
+    </th:block>
+
+    <th:block layout:fragment="footer"></th:block>
+</body>
+</html>

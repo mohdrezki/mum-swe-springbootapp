@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="~{common/mainlayout}">
+<head>
+    <title>Product Management System</title>
+</head>
+<body>
+
+    <th:block layout:fragment="content">
+        
+        <div class="product-img-container">
+                <img th:src="${product.productImage}" alt="product">
+            </div>
+            <div class="product-desc-container">
+                <h3>Product Details</h3>
+                <div>
+                    Reference: <span th:text="${product.productId}"></span>
+                </div>
+                <div>
+                    Name: <span th:text="${product.productName}"></span>
+                </div>
+                <div>
+                    Price: <span th:text="@{ '$' + ${product.productPrice}}"></span>
+                </div>
+                <div>
+                    Description: <span th:text="${product.productDescription}"></span>
+                </div>
+                <div class="add-to-card-container">
+                   <a class="btn btn-light btn-add-to-cart" th:href="@{'/products/edit/'+${product.productId}}"> Update product</a>
+                </div>
+            </div>
+        
+    </th:block>
+
+    <th:block layout:fragment="footer"></th:block>
+</body>
+</html>
